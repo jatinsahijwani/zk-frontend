@@ -41,7 +41,7 @@ export default function Home() {
       const argv = callData
         .replace(/["[\]\s]/g, "")
         .split(",")
-        .map((x) => BigInt(x).toString());
+        .map((x: string) => BigInt(x).toString());
 
       const a = [argv[0], argv[1]];
       const b = [
